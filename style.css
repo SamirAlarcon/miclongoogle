@@ -12,6 +12,8 @@ html{
     --text-color-primary:rgba(0,0,0,0.87);
     --text-color-secundary:#3c4043;
     --background-color-primary:#f8f9fa;
+    --background-color-secundary:#f2f2f2;
+    --text-color-tercero:#70757a;
     --font-texto:Arial, sans-serif;
 }
 
@@ -57,17 +59,6 @@ main{
 
 .logo{
     height: 50%;
-}
-
-footer{
-    background-color: yellowgreen;
-    height: 80px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-.logo{
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -149,4 +140,33 @@ footer{
 
 .formulario a{
     text-decoration: none;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--background-color-secundary);
+}
+
+footer div{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 0.5px #c7c7c7;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+}
+
+footer li{
+    margin: 0 10px;
+    font-size: 1.4rem;
+    font-family: var(--font-texto);
+    color: var(--text-color-tercero);
 }
