@@ -8,7 +8,36 @@ html{
     font-size: 62.5%;
 }
 
-header{
-    background-color: aquamarine;
+:root{
+    --text-color-primary:rgba(0,0,0,0.87);
+}
+
+header nav{
     height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header li{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--text-color-primary);
+    font-size: 1.3rem;
+    font-family: Arial, sans-serif;
+}
+
+header ul{
+    margin: 0 10px;
+}
+
+header .foto{
+    border-radius: 50%;
 }
