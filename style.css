@@ -10,6 +10,15 @@ html{
 
 :root{
     --text-color-primary:rgba(0,0,0,0.87);
+    --text-color-secundary:#3c4043;
+    --background-color-primary:#f8f9fa;
+    --font-texto:Arial, sans-serif;
+}
+
+
+
+header{
+    width: 100%;
 }
 
 header nav{
@@ -31,7 +40,7 @@ header a{
     text-decoration: none;
     color: var(--text-color-primary);
     font-size: 1.3rem;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-texto);
 }
 
 header ul{
@@ -40,4 +49,104 @@ header ul{
 
 header .foto{
     border-radius: 50%;
+}
+
+main{
+    height: 70vh;
+}
+
+.logo{
+    height: 50%;
+}
+
+footer{
+    background-color: yellowgreen;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo img{
+    width: 272px;
+    height: 92px;
+    margin: 20px 0;
+}
+
+.formulario form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input-buscar{
+    height: 45px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    border: 1px solid #c4c4c4;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.input-buscar:focus{
+    border: 1px solid #c4c4c4;
+    
+}
+
+.input-texto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario form .search{
+    position: relative;
+    margin-top: 15px;
+    left: 30px;
+    height: 16px;
+    color: rgb(151, 151, 151);
+}
+
+.formulario form .micro{
+    position: relative;
+    margin-top: 15px;
+    right: 30px;
+    height: 16px;
+    color: rgb(151, 151, 151);
+}
+
+.botones{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: var(--background-color-primary);
+    margin: 0 10px;
+    color: var(--text-color-secundary);
+}
+
+.btn:hover{
+    box-shadow: 0.5px 0.5px 5px #666;
+}
+
+.formulario p{
+    font-size: 1.3rem;
+    font-family: var(--font-texto);
+}
+
+.formulario a{
+    text-decoration: none;
 }
