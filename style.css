@@ -166,7 +166,12 @@ footer ul{
 
 footer li{
     margin: 0 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: var(--font-texto);
     color: var(--text-color-tercero);
+}
+
+.derecha{
+    position: absolute;
+    right: 10px;
 }
